@@ -1,3 +1,5 @@
 name = "marcogomez-webpage"
 compatibility_date = "2025-08-22"
-pages_build_output_dir = "./build"
+
+[assets]
+directory = "./build"
