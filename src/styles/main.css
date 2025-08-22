@@ -1,0 +1,16 @@
+/* Main CSS file - Imports all layers from the new design system */
+@layer base, component, modifier;
+
+@import './design/base.css';
+@import './design/layout.css';
+@import './design/content.css';
+@import './design/button.css';
+@import './design/dialog.css';
+@import './design/document.css';
+@import './design/form.css';
+@import './design/syntax.css';
+@import './design/table.css';
+
+@import './design/components.css';
+
+@import './design/modifiers.css';

@@ -1,0 +1,42 @@
+
+@layer base {
+
+  :root {
+    scroll-behavior: smooth;
+
+    /* base colors - aligned with Marco Gomez brand */
+    --base-200: #F4F7F9; /* Blanco Nube */
+    --base-400: #94A3B8; /* Mantener si es necesario para grises intermedios */
+    --base-600: #475569; /* Mantener si es necesario para grises intermedios */
+    --base-800: #1E2025; /* Gris Carbón Intenso */
+
+    /* accent color */
+    --accent-primary: #00A1E4; /* Azul Cerúleo */
+    --accent-primary-dark: #008ac7; /* Darker Cerulean Blue for interactions */
+    --accent-shadow: rgba(0, 161, 228, 0.15); /* Subtle shadow using accent color */
+
+    /* feedback and status colors */
+    --highlight-bg: #fff3cd; /* Highlight for targeted elements */
+    --backdrop-bg: rgba(0,0,0, 50%); /* Backdrop for modals and dialogs */
+
+    /* syntax highlighting colors */
+    --syntax-primary: #ff3aa1;
+    --syntax-secondary: #4065ff;
+    --syntax-emphasis: #419fff;
+    --syntax-mark-bg: #2bb8ff26;
+
+    /* link colors - derived from accent */
+    --link: var(--accent-primary);
+    --visited: var(--accent-primary); /* Mantener o ajustar si hay un color específico para visitados */
+
+    /* typographic grid */
+    --m: 1.5rem;
+    --l: 3rem;
+    --xl: 4.5rem;
+    --max-line-width: 45rem;
+
+    /* typography */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+  }
+}

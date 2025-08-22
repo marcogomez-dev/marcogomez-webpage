@@ -1,0 +1,76 @@
+
+@layer base {
+  body {
+    max-width: 1000px;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    gap: var(--l);
+
+    > * { padding: 1em }
+    > main {
+      flex: 1;
+    }
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--m) 1em;
+    background-color: var(--base-200);
+    border-bottom: 1px solid var(--base-400);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    nav {
+      align-items: center;
+      display: flex;
+      gap: 2em;
+
+      a {
+        &, &:visited { color: var(--base-600) }
+        text-decoration: none;
+        white-space: nowrap;
+        display: flex; /* Ensure icons and text align */
+        align-items: center;
+        gap: 0.5em; /* Space between icon and text */
+        font-weight: 500; /* Default font weight for nav links */
+        transition: color 0.3s ease; /* Smooth transition for hover */
+
+        &:hover {
+          color: var(--accent-primary); /* Accent color on hover */
+        }
+
+        &[aria-current="page"] {
+          font-weight: 800;
+          color: var(--base-800);
+        }
+      }
+
+      /* Mobile responsiveness for header nav */
+      @media (max-width: 768px) {
+        display: none; /* Hide navigation on small screens, will implement hamburger menu later */
+      }
+    }
+  }
+
+  footer {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+
+    nav:last-of-type {
+      margin-left: auto;
+      justify-content: right;
+    }
+  }
+
+  /* General nav styles, if needed outside header */
+  nav {
+    /* toolbars */
+    &:has(button) { gap: .75em }
+  }
+}

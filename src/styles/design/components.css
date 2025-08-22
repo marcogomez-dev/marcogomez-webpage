@@ -1,0 +1,22 @@
+@layer component {
+  .toast {
+    background-color: var(--base-800);
+    padding: .5em 1em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+
+    p {
+      color: var(--base-200);
+      margin: 0
+    }
+  }
+
+  .logo {
+    font-family: var(--font-poppins);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--base-800);
+    text-decoration: none;
+  }
+}
