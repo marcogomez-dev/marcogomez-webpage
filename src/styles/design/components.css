@@ -18,5 +18,61 @@
     font-size: 1.5rem;
     color: var(--base-800);
     text-decoration: none;
+
+    img { /* Aplicar estilos directamente a la imagen dentro de .logo */
+      width: 40px; /* Ajusta el tamaño según sea necesario */
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px var(--accent-shadow);
+      transition: all 0.3s ease-in-out; /* Transición suave para efectos */
+
+      &:hover {
+        box-shadow: 0 6px 12px var(--accent-shadow); /* Sombra más pronunciada al pasar el cursor */
+        transform: translateY(-2px); /* Ligero levantamiento */
+      }
+    }
   }
+
+  .avatar {
+    width: 300px; /* Tamaño por defecto para el avatar */
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px var(--accent-shadow);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 12px 24px var(--accent-shadow);
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .icon {
+    color: var(--base-800);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--accent-primary);
+    }
+  }
+
+  .card {
+    background-color: var(--base-100);
+    border: 1px solid var(--base-300);
+    border-radius: 8px;
+    padding: 2em;
+    box-shadow: 0 4px 8px var(--accent-shadow);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 8px 16px var(--accent-shadow);
+      transform: translateY(-4px);
+    }
+  }
+            
 }

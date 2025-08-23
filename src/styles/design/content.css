@@ -52,10 +52,6 @@
     + p { margin-top: 0 }
   }
 
-  p {
-    margin-block: 1em; /* Default paragraph margin */
-  }
-
   ol, ul, figure, table {
     margin-block: var(--m)
   }
@@ -70,13 +66,15 @@
 
   strong { color: var(--base-800) }
 
+  li, td {
+    color: var(--base-800); /* Usar Gris Carbón Intenso para el texto principal */
+  }
 
-  p, li, td {
+  p {
     color: var(--base-800); /* Usar Gris Carbón Intenso para el texto principal */
     text-wrap: pretty;
     max-width: var(--max-line-width); /* Aplicar ancho máximo a los párrafos */
-    margin-left: auto; /* Centrar párrafos */
-    margin-right: auto; /* Centrar párrafos */
+
 
     code {
       background-color: var(--base-200);

@@ -6,22 +6,12 @@ Bienvenido al repositorio del portafolio y la documentación de Marco Gómez. Aq
 
 Esta sección te guiará a través de los documentos clave que describen la visión y la implementación de mi marca y portafolio digital.
 
-*   [**00-briefing.md: Briefing Completo de Marca Personal y Web**](docs/00-briefing.md)
-    *   Detalla la lógica y esencia de mi marca, valores fundamentales, propuesta de valor, personalidad, público objetivo y los objetivos principales de la web.
-*   [**01-contenido.md: Contenido Principal de la Web**](docs/01-contenido.md)
-    *   Presenta el contenido textual para las secciones clave de la web: Inicio, Acerca de Mí, Servicios y Portafolio.
-*   [**02-diseño_propuesto.md: Concepto "Impulso Digital" y Elementos de Diseño**](docs/02-diseño_propuesto.md)
-    *   Define la paleta de colores, tipografía y estilo visual general que darán vida a la marca.
-*   [**03-lineamientos_diseño.md: Patrones Gráficos y Lineamientos de Diseño Web (UI/UX)**](docs/03-lineamientos_diseño.md)
-    *   Describe los elementos visuales consistentes y los principios de diseño para asegurar una experiencia de usuario óptima.
-*   [**04-tecnologia-web.md: Tecnología Web Propuesta**](docs/04-tecnologia-web.md)
-    *   Detalla la pila tecnológica seleccionada para la construcción del portafolio, incluyendo SvelteKit, TypeScript, Bun, Bits UI y Lucide.
-*   [**04.1-sveltekit_migracion.md: Guía de Migración a Svelte 5**](docs/04.1-sveltekit_migracion.md)
-    *   Guía de migración a Svelte 5, detallando los cambios en la sintaxis de reactividad, eventos, slots y otras actualizaciones importantes.
-*   [**05-sistema-css.md: Sistema de Diseño CSS**](docs/05-sistema-css.md)
-    *   Explica la implementación de OOCSS + ITCSS con CSS nativo, evitando frameworks externos para un control total del estilo.
-*   [**06-Maquetado-teorico.md: Maquetado Teórico de la Web**](docs/06-Maquetado-teorico.md)
-    *   Proporciona una estructura detallada y los elementos de diseño clave para cada sección de la web.
+*   [**00-Marca.md: Marca Personal y Web**](docs/00-Marca.md)
+    *   Consolida el briefing completo de la marca, la lógica y esencia, propuesta de valor, público objetivo, objetivos de la web, requisitos de contenido, diseño estético y la propuesta de diseño visual.
+*   [**01-Lineamientos.md: Lineamientos de Diseño y Tecnología**](docs/01-Lineamientos.md)
+    *   Detalla los lineamientos de diseño web (UI/UX), la pila tecnológica propuesta (SvelteKit v5, TypeScript, Bun, Bits UI, Lucide), los cambios esenciales de sintaxis para Svelte 5 y la arquitectura del sistema CSS.
+*   [**02-Maquetado.md: Maquetado Teórico de la Web**](docs/02-Maquetado.md)
+    *   Proporciona la estructura detallada, el contenido y los elementos de diseño clave para cada sección de la web, consolidando la información de los documentos de marca y lineamientos.
 
 ## Desarrollo del Proyecto
 

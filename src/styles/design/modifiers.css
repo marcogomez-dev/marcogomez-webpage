@@ -19,4 +19,45 @@
   [hidden] { display: none }
   a:has(img:only-child) { font-size: 0 }
 
+  /* background patterns */
+  .shapes {
+    background-image: url('/marca/formas.png');
+    background-repeat: repeat;
+    background-size: 150px; /* Ajusta el tamaño del patrón según sea necesario */
+    opacity: 0.05; /* Transparencia sutil */
+    pointer-events: none; /* Asegura que no interfiera con interacciones */
+    position: absolute; /* Posicionamiento absoluto para cubrir el fondo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Enviar al fondo */
+  }
+
+  /* For sections that need to stand out */
+  .emphatized {
+    text-align: center;
+        h2, h3, p {
+            min-width: 100%;
+          }
+  }
+
+  /* For sections with a dark background */
+  .inverted {
+    background-color: var(--base-800);
+    color: var(--base-200);
+
+    h1, h2, h3, h4, h5, h6, strong {
+      color: var(--base-100);
+    }
+
+    a {
+      color: var(--accent-primary);
+    }
+  }
+
+  /* For sections with reduced spacing */
+  .compact {
+    padding-block: 2em;
+  }
 }

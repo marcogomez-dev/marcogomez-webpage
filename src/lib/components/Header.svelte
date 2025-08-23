@@ -7,19 +7,21 @@
 
   const navItems = [
     { name: 'Inicio', href: '/', icon: Home },
-    { name: 'Acerca de Mí', href: '#about', icon: User },
-    { name: 'Servicios', href: '#services', icon: Lightbulb },
-    { name: 'Proyectos', href: '#work', icon: Briefcase },
-    { name: 'Contacto', href: '#contact', icon: Mail },
+    { name: 'Acerca de Mí', href: '/about', icon: User },
+    { name: 'Servicios', href: '/services', icon: Lightbulb },
+    { name: 'Proyectos', href: '/work', icon: Briefcase },
+    { name: 'Contacto', href: '/contact', icon: Mail },
   ];
 </script>
 
 <header>
-  <a href="/" class="logo">Marco Gómez</a>
+  <a href="/" class="logo">
+    <img src="/marca/logo_circle.png" alt="Marco Gómez Logo" class="logo-img" />
+  </a>
   <nav>
     {#each navItems as item}
       <a href={item.href}>
-        <svelte:component this={item.icon} size={18} />
+        <item.icon size={18} />
         {item.name}
       </a>
     {/each}

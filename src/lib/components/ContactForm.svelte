@@ -1,9 +1,9 @@
 <script lang="ts">
   // Lógica para el manejo del formulario (envío, validación, etc.)
-  let name: string = '';
-  let email: string = '';
-  let subject: string = '';
-  let message: string = '';
+  let name = $state('');
+  let email = $state('');
+  let subject = $state('');
+  let message = $state('');
 
   function handleSubmit() {
     console.log('Formulario enviado:', { name, email, subject, message });
